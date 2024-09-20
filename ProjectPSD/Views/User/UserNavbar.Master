@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserNavbar.master.cs" Inherits="ProjectPSD.Views.User.UserNavbar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav>
+            <asp:Button ID="orderBtn" OnClick="orderBtn_Click" runat="server" Text="Order Makeup" />
+            <asp:Button ID="HistoryBtn" Onclick="HistoryBtn_Click" runat="server" Text="History" />
+            <asp:Button ID="ProfileBtn" Onclick="ProfileBtn_Click" runat="server" Text="Account" />
+            <asp:Button ID="logoutBtn" Onclick="logoutBtn_Click" runat="server" Text="Logout" />
+        </nav>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">    
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

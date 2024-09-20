@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminNavbar.master.cs" Inherits="ProjectPSD.Views.Admin.AdminNavbar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav>
+            <asp:Button ID="home" OnClick="home_Click" runat="server" Text="Home" />
+            <asp:Button ID="manageMakeup" OnClick="manageMakeup_Click" runat="server" Text="Manage Makeup" />
+            <asp:Button ID="orderQueue" OnClick="orderQueue_Click" runat="server" Text="Order Queue" />
+            <asp:Button ID="profile" OnClick="profile_Click" runat="server" Text="Profile " />
+            <asp:Button ID="tHistory" OnClick="tHistory_Click" runat="server" Text="Transaction History" />
+            <asp:Button ID="tReport" OnClick="tReport_Click" runat="server" Text="Transaction Report" />
+            <asp:Button ID="logout" OnClick="logout_Click" runat="server" Text="Logout" />
+        </nav>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
